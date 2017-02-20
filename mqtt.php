@@ -3,8 +3,8 @@
 require_once(__DIR__ . '/phpMQTT.php');
 
 $mqtt = new phpMQTT('192.168.178.11', 1883, "onion-mqtt-display");
-if (!$mqtt->connect()) {
-    exit(1);
+while(!$mqtt->connect()) {
+    sleep(5);
 }
 
 $line1 = ' ';
