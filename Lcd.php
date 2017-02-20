@@ -3,7 +3,7 @@ namespace MKLeine\OnionOmega;
 
 use \MKLeine\OnionOmega\Gpio;
 
-require_once('OmegaOnion.php');
+require_once(__DIR__ . '/OmegaOnion.php');
 
 class Lcd
 {
